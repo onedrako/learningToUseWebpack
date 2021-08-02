@@ -4,7 +4,7 @@
   "description": "A minimal portfolio with Vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "node ./scripts/create-env.js && webpack --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
     "dev:watch": "npm run dev --watch"
   },
